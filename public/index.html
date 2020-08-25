@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Zigat.com</title>
+    <style>
+      body {
+        background-color: rgb(250,250,250);
+        display: flex;
+        flex-direction: column;
+      }
+      @media(min-width: 961px) {
+        #restaurantInfo {
+          margin-bottom: 50px;
+        }
+        #tips-recommendations-section {
+          position: relative;
+          bottom: 740px;
+          width: 70%;
+        }
+        #similar-restaurants-grid {
+          position: relative;
+          bottom: 740px;
+        }
+      }
+      #header{
+        height: 80px;
+        border-bottom: 1px solid white;
+        background-color: #b70038;
+        width: 100%;
+      }
+      #logo{
+        height: 100%;
+      }
+      #footer{
+        height: 50px;
+        background-color: black;
+        width: 100%;
+        position: relative;
+        bottom: 740px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img id="logo" src="https://zigat.s3-us-west-1.amazonaws.com/zigat_logo.png" alt="logo" />
+    </div>
+    <div id="carousel">Photo Carousel goes here</div>
+    <div id="restaurantInfo">Info and sidebar go here</script></div>
+    <div id="tips-recommendations-section">Tips and recommendations go here</div>
+    <div id="similar-restaurants-grid">Similar restaurants go here</div>
+    <div id="footer"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script src="http://localhost:3001/public/dist/main.js"></script>
+    <script src="http://localhost:3002/dist/main.js"></script>
+    <script src="http://localhost:6070/dist/bundle.js"></script>
+    <script src="http://localhost:3004/public/dist/bundle.js"></script>
+  </body>
+</html>
