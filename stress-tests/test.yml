@@ -1,0 +1,20 @@
+config:
+  target: "http://127.0.0.1:3000"
+  phases:
+    - duration: 5
+      arrivalRate: 1
+      rampTo: 10
+      name: Test
+scenarios:
+  - name: "Get restaurant data"
+    flow:
+      - get:
+          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
+      - get:
+          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
+      - get:
+          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
+      - get:
+          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
+      - get:
+          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
