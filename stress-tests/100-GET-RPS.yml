@@ -1,30 +1,17 @@
 config:
   target: "http://127.0.0.1:3000"
   phases:
-    - duration: 5
+    - duration: 30
       arrivalRate: 1
-      rampTo: 10
-      name: Start with 5RPS, ramp to 50RPS
-    - duration: 20
-      arrivalRate: 10
-      name: Sustain at 50RPS
-    - duration: 60
-      arrivalRate: 10
-      rampTo: 20
-      name: Ramp to 100RPS
+      rampTo: 5
+      name: Start with 20RPS, ramp to 100RPS
     - duration: 120
-      arrivalRate: 20
+      arrivalRate: 5
       name: Sustain at 100RPS
 scenarios:
   - name: "Get restaurant data"
     flow:
+    - loop:
       - get:
           url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
-      - get:
-          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
-      - get:
-          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
-      - get:
-          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
-      - get:
-          url: "/restaurant/{{ $randomNumber(9000000, 10000000) }}"
+      count: 25
