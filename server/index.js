@@ -8,7 +8,7 @@ const port = 3000;
 app.use('/:id', express.static('public'));
 
 // Photo Carousel
-app.use('/restaurant/:id', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/restaurant/:id', createProxyMiddleware({ target: 'http://54.193.61.185:3001', changeOrigin: true }));
 
 // // Info Sidebar
 // app.use('/:copyId/restaurants/:id', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
