@@ -5,6 +5,10 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const port = 3000;
 
+app.get('/loaderio-f0cfcb86c0120af25839d00359edf74e', (req, res) => {
+  res.send('loaderio-f0cfcb86c0120af25839d00359edf74e');
+});
+
 app.use('/:id', express.static('public'));
 
 // Photo Carousel
