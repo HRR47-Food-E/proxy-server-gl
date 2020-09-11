@@ -12,7 +12,7 @@ app.get('/loaderio-f0cfcb86c0120af25839d00359edf74e', (req, res) => {
 app.use('/:id', express.static('public'));
 
 // Photo Carousel
-app.use('/restaurant/:id', createProxyMiddleware({ target: '54.176.77.182', changeOrigin: true }));
+app.use('/restaurant/:id', createProxyMiddleware({ target: 'http://54.176.77.182', changeOrigin: true }));
 
 // // Info Sidebar
 app.use('/:copyId/restaurants/:id', createProxyMiddleware({ target: 'http://3.101.107.222:3002', changeOrigin: true }));
