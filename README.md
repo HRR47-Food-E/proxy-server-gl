@@ -1,14 +1,12 @@
-# Zigat.com
-> This webpage is inspired by Zagat.com website and their restaurant information page.
-Example: https://www.zagat.com/r/smoque-bbq-chicago
+# Food-E
 
-> It has a photo carousel at the top, an information section, a sidebar showing opening hours and a map to their location, a section with tips and articles related to the restaurant, and a grid showing similar restaurants by category and neighborhood.
+> Food-E is an application for viewing restaurant listings. Each listing page has a photo gallery + carousel at the top, an information section, a sidebar showing opening hours and a map to their location, a section with tips and articles related to the restaurant, and a grid showing similar restaurants by category and neighborhood.
 
 ## Individual Projects
-  - https://github.com/FEC-7-Stevens/photo-carousel-service
-  - https://github.com/FEC-7-Stevens/info-sidebar-service
-  - https://github.com/FEC-7-Stevens/tips-recommendations-service
-  - https://github.com/FEC-7-Stevens/similar-restaurants-service
+  - https://github.com/HRR47-Food-E/photo-carousel-service
+  - https://github.com/HRR47-Food-E/info-sidebar-service
+  - https://github.com/HRR47-Food-E/tips-recommendations
+  - https://github.com/HRR47-Food-E/similar-restaurants-service
 
 ## Table of Contents
 
